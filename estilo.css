@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.cabecalho{
+    background-color: #9b9b9b;
+    width: auto;
+    height: 100px;
+}
+
+.navegacao{
+    background-color: #fcdf00;
+    width: auto;
+    height: 50px;
+}
+
+.rodape{
+    background-color: #9b9b9b;
+    width: auto;
+    height: 80px;
+}
+
+
+.background{
+    background: url(backgroundcomcortes.png);
+    background-size: cover;
+    width: auto;
+    height: 740px;
+}
