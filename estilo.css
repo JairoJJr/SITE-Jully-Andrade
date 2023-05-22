@@ -1,11 +1,13 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .background{
-    width: 1920px;
-    height: 630px;
+    width: auto;
+    height: 750px;
+    background-image: url(BG/corte_pc.png);
 }
 
 .divBG{
@@ -27,13 +29,12 @@
     height: 70px;
 }
 
-.rodape{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
+.rodape {
     background-color: #9b9b9b;
+    height: 75px;
+    position: relative;
+    margin-top: -4px;
+    clear: both;
 }
 
 .texto{
@@ -57,10 +58,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 280px; /*aqui pode movimentar a altura*/
+    margin-top: 300px; /*aqui pode movimentar a altura*/
     margin-left: -50px; /*movimento para direita ou esquerda*/
   }
 
-  @media (max-width: 768px) {
+ /*------------------------- Página serviço ---------------------*/
 
-  }
+ .background-servico{
+    width: auto;
+    height: 735px;
+    background-image: url(BG/corte_pc.png);
+ }
