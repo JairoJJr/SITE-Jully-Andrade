@@ -64,60 +64,51 @@
 
  /*------------------------- Página serviço ---------------------*/
 
+/*Essa parte ficou um pouco mais complexa, por isso se ficar alguma dúvida me mande uma mensagem.*/
+
  .background-servico{
+    background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
     width: auto;
-    height: 740px;
+    height: 740px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
     background-image: url(BG/BG_PC_servicos_corte.png);
  }
 
- .img-servicos-tamanho{
-    width: 600px;
-    height: 600px;
+.divImgServicos{ /*Essa classe tem como objetivo deixar a div do mesmo tamanho da imagem do serviço para facilitar a manipulação*/
+    height: auto; 
  }
 
- .imagens-servicos{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: 250px; /*movimento para direita ou esquerda*/
+ .imgServico{ /*Essa class posiciona a imagem na div*/
+    padding-top: 180px;
+    height: 25vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
  }
 
- #img-servico1{
-    margin-top: -120px; /*aqui pode movimentar a altura*/
+ .subtitulosServicos{  /*Essa class vai posiciona e modificar os subtítulos que são os nomes dos serviço*/
+    padding-top: 10%; /*Posiciona na div*/
+    padding-left: 15%; 
+    color: #fcdf00;
+    height: auto; /*É só para garantir que o altura do conteúdo seja correspondente ao da div*/
+    width: 50%; /*Tamanho da largura do conteúdo. Caso você queira que alguma palavra vá para baixo de outra, tente diminuir esse valor.*/
+    font-size: 90px;
+    font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
+    font-weight: normal; /*Retira o negrito do h1*/
 }
 
- #img-servico2{
-    margin-top: 630px; 
- }
 
- #img-servico3{
-    margin-top: 1350px; 
- }
+.descricaoServicos{ /*Essa class vai posiciona e modificar as descrições dos serviços. (É bem parecido com a .subtitulosServicos)*/
+    position: static;
+    padding-left: 15% ;
+    color: black;
+    height: 50%;
+    width: 30%;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Satisfy', cursive;
+}
 
- #img-servico4{
-    margin-top: 2100px; 
- }
+.divServico{ /*Essa class modifica a div que contém tanto a imagem do serviço como as informações dele*/
+    display: inline-flex; /*Com esse inline-flex no display eu garanto que ambas as div de imagem e informações fiquem uma ao lado da outra. */
+}
 
- #img-servico5{
-    margin-top: 2830px; 
- }
-
- #img-servico6{
-    margin-top: 3560px; 
- }
-
- #img-servico7{
-    margin-top: 4300px; 
- }
-
- #img-servico8{
-    margin-top: 5050px; 
- }
-
- #img-servico9{
-    margin-top: 5800px; 
- }
-
- #img-servico10{
-    margin-top: 6530px; 
- }
+.divTitulosServicos{ /*Essa class modifica a div das informações.*/
+    width: 60vw; /*Com esse width conseguimos modificar a largura dela. Modificar essa tag também altera a distância entre as informações e a imagem.*/
+}
