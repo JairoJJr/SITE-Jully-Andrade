@@ -69,3 +69,55 @@
     height: 740px;
     background-image: url(BG/BG_PC_servicos_corte.png);
  }
+
+ .img-servicos-tamanho{
+    width: 600px;
+    height: 600px;
+ }
+
+ .imagens-servicos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 250px; /*movimento para direita ou esquerda*/
+ }
+
+ #img-servico1{
+    margin-top: -120px; /*aqui pode movimentar a altura*/
+}
+
+ #img-servico2{
+    margin-top: 630px; 
+ }
+
+ #img-servico3{
+    margin-top: 1350px; 
+ }
+
+ #img-servico4{
+    margin-top: 2100px; 
+ }
+
+ #img-servico5{
+    margin-top: 2830px; 
+ }
+
+ #img-servico6{
+    margin-top: 3560px; 
+ }
+
+ #img-servico7{
+    margin-top: 4300px; 
+ }
+
+ #img-servico8{
+    margin-top: 5050px; 
+ }
+
+ #img-servico9{
+    margin-top: 5800px; 
+ }
+
+ #img-servico10{
+    margin-top: 6530px; 
+ }
