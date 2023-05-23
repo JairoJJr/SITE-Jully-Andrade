@@ -41,8 +41,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -50px; /*aqui pode movimentar a altura*/
-    margin-left: -500px; /*movimento para direita ou esquerda*/
+    margin-top: -150px; /*aqui pode movimentar a altura*/
+    margin-left: -900px; /*movimento para direita ou esquerda*/
 }
 
 .botao-link {
@@ -60,6 +60,11 @@
     left: 50%;
     margin-top: 300px; /*aqui pode movimentar a altura*/
     margin-left: -50px; /*movimento para direita ou esquerda*/
+  }
+
+  .navegacao-link{
+    text-align: center;
+    font-size: 30px;
   }
 
  /*------------------------- Página serviço ---------------------*/
