@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <!-- ----------------------------- -->
 
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -23,26 +23,13 @@
     </div>
 
     <!--Barra de navegação-->
-    <div class="navegacao">        
-        <button onclick="mostrar()" class="iconeNav">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <div class="navegacao-link"id="navegacao-link">
-            <button onclick="mostrar()" class="iconeNav">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <a href="index.html">Menu</a>
-            <a href="#">Ambiente</a>
-            <a href="#">Quem sou eu?</a>
-            <a class="ativo" href="servico.html">Serviços</a>
+    <div class="navegacao">
+        <div class="navegacao-link">
+            <a href="index.html" target="_blank">Home</a>        
         </div>
     </div>
 
-    <div id="conteudoPagina" onclick="fecharBar()">
+    <div>
         <!--Imagem de background 1 -->
         <div class="background-servico"> 
              <!--Conteúdo Serviço 1-->
@@ -60,16 +47,16 @@
         </div>
 
         <!--Imagem de background 2-->
-        <div class="background-servico-Invertido"> 
+        <div class="background-servico"> 
             <!--Conteúdo Serviço 2-->
-            <div class="divServico-Invertido">
+            <div class="divServico">
                 <!--No conteúdo haverá duas partes, a imagem do serviço e ao lado esquerdo as informações do serviço. Ambas estão separadas em duas div's abaixo.-->
-                <div class="divTitulosServicos-Invertido">
-                    <h1 class="subtitulosServicos-Invertido">Banho de Gel</h1>
-                    <h2 class="descricaoServicos-Invertido">Descrição</h2>
+                <div class="divTitulosServicos">
+                    <h1 class="subtitulosServicos">Banho de Gel</h1>
+                    <h2 class="descricaoServicos">Descrição</h2>
                 </div>
-                <div class="divImgServicos-Invertido">
-                    <img class="imgServico-Invertido" src="servicos/Banho_de_Gel.png" alt="">
+                <div class="divImgServicos">
+                    <img class="imgServico" src="servicos/Banho_de_Gel.png" alt="">
                 </div>
             </div>
 
@@ -92,16 +79,16 @@
        </div>
 
        <!--Imagem de background 4-->
-       <div class="background-servico-Invertido"> 
+       <div class="background-servico"> 
             <!--Conteúdo Serviço 4-->
-            <div class="divServico-Invertido">
+            <div class="divServico">
                 <!--No conteúdo haverá duas partes, a imagem do serviço e ao lado esquerdo as informações do serviço. Ambas estão separadas em duas div's abaixo.-->
-                <div class="divTitulosServicos-Invertido">
-                    <h1 class="subtitulosServicos-Invertido">Epilação Egipcia</h1>
-                    <h2 class="descricaoServicos-Invertido">Descrição</h2>
+                <div class="divTitulosServicos">
+                    <h1 class="subtitulosServicos">Epilação Egipcia</h1>
+                    <h2 class="descricaoServicos">Descrição</h2>
                 </div>
-                <div class="divImgServicos-Invertido">
-                    <img class="imgServico-Invertido" src="servicos/Epilação_Egipcia.png" alt="">
+                <div class="divImgServicos">
+                    <img class="imgServico" src="servicos/Epilação_Egipcia.png" alt="">
                 </div>
             </div>
 
@@ -124,16 +111,16 @@
         </div>
 
         <!--Imagem de background 6-->
-       <div class="background-servico-Invertido"> 
+       <div class="background-servico"> 
             <!--Conteúdo Serviço 6-->
-            <div class="divServico-Invertido">
+            <div class="divServico">
                 <!--No conteúdo haverá duas partes, a imagem do serviço e ao lado esquerdo as informações do serviço. Ambas estão separadas em duas div's abaixo.-->
-                <div class="divTitulosServicos-Invertido">
-                    <h1 class="subtitulosServicos-Invertido">Pé e Mão</h1>
-                    <h2 class="descricaoServicos-Invertido">Descrição</h2>
+                <div class="divTitulosServicos">
+                    <h1 class="subtitulosServicos">Pé e Mão</h1>
+                    <h2 class="descricaoServicos">Descrição</h2>
                 </div>
-                <div class="divImgServicos-Invertido">
-                    <img class="imgServico-Invertido" src="servicos/Pe_e_Mao.png" alt="">
+                <div class="divImgServicos">
+                    <img class="imgServico" src="servicos/Pe_e_Mao.png" alt="">
                 </div>
             </div>
 
@@ -156,16 +143,16 @@
        </div>
 
         <!--Imagem de background 8-->
-        <div class="background-servico-Invertido"> 
+        <div class="background-servico"> 
             <!--Conteúdo Serviço 8-->
-            <div class="divServico-Invertido">
+            <div class="divServico">
                 <!--No conteúdo haverá duas partes, a imagem do serviço e ao lado esquerdo as informações do serviço. Ambas estão separadas em duas div's abaixo.-->
-                <div class="divTitulosServicos-Invertido">
-                    <h1 class="subtitulosServicos-Invertido">Volume Brasileiro</h1>
-                    <h2 class="descricaoServicos-Invertido">Descrição</h2>
+                <div class="divTitulosServicos">
+                    <h1 class="subtitulosServicos">Volume Brasileiro</h1>
+                    <h2 class="descricaoServicos">Descrição</h2>
                 </div>
-                <div class="divImgServicos-Invertido">
-                    <img class="imgServico-Invertido" src="servicos/Volume_Brasileiro.png" alt="">
+                <div class="divImgServicos">
+                    <img class="imgServico" src="servicos/Volume_Brasileiro.png" alt="">
                 </div>
             </div>
 
@@ -188,16 +175,16 @@
         </div>
 
        <!--Imagem de background 10-->
-       <div class="background-servico-Invertido"> 
+       <div class="background-servico"> 
             <!--Conteúdo Serviço 10-->
-            <div class="divServico-Invertido">
+            <div class="divServico">
                 <!--No conteúdo haverá duas partes, a imagem do serviço e ao lado esquerdo as informações do serviço. Ambas estão separadas em duas div's.-->
-                <div class="divTitulosServicos-Invertido">
-                    <h1 class="subtitulosServicos-Invertido">Volume Express</h1>
-                    <h2 class="descricaoServicos-Invertido">Descrição</h2>
+                <div class="divTitulosServicos">
+                    <h1 class="subtitulosServicos">Volume Express</h1>
+                    <h2 class="descricaoServicos">Descrição</h2>
                 </div>
-                <div class="divImgServicos-Invertido">
-                    <img class="imgServico-Invertido" src="servicos/Volume_Express.png" alt="">
+                <div class="divImgServicos">
+                    <img class="imgServico" src="servicos/Volume_Express.png" alt="">
                 </div>
             </div>
 

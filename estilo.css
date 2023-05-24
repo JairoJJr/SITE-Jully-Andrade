@@ -23,7 +23,7 @@
 }
 
 .navegacao{
-    background-color: #aea34d;
+    background-color: #fcdf00;
     background-size: 100vw 100vh;
     width: auto;
     height: 70px;
@@ -41,8 +41,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -50px; /*aqui pode movimentar a altura*/
-    margin-left: -500px; /*movimento para direita ou esquerda*/
+    margin-top: -150px; /*aqui pode movimentar a altura*/
+    margin-left: -900px; /*movimento para direita ou esquerda*/
 }
 
 .botao-link {
@@ -62,128 +62,35 @@
     margin-left: -50px; /*movimento para direita ou esquerda*/
   }
 
-/*---------------Navegação---------------*/ 
+  .navegacao-link{
+    text-align: center;
+    font-size: 30px;
+  }
 
-.navegacao, .navegacao-link{ 
-    display: flex; 
-    flex-direction: row; /*Essa tag faz com que os itens sejam ordenados da esquerda para a direita*/
-    align-items: center; /*Centraliza os itens na div*/
-}
-
-.navegacao{
-    justify-content: center;
-    padding-left: 5%;
-}
-.navegacao-link{
-    gap: 14em; /*Distância entre os itens*/
-    z-index: 2; /*Essa tag adiciona camadas no html. Como eu quero que a área de navegação seja a camada mais alta, eu adiciono 2 no index*/
-}
-.navegacao-link a{
-    font-size: 2em;
-    text-decoration: none;
-    color: rgb(39, 39, 39);
-    font-weight: bold;
-    font-family: 'Satisfy', cursive;
-}
-
-.iconeNav{ /*Classe que modifica os ícones de navegação*/
-    display: none; /*Como eu não quero que ele apareça para telas maiores que 1220px de largura, eu defino como none*/
-    background-color: transparent;
-    border: none;
-    color: black;
-    cursor: pointer;
-    justify-content: center;
-}
-
-/*
-( TESTES )
-
-.ativo{
-    background: #ffffff38;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-
-    border-radius: 10px;
-}
-*/
-/*----------- Mobile ------------*/
-
-
-/*media screen ou telas com no max 1220px de largura*/
-@media screen and (max-width: 1220px){
-    .iconeNav{
-        display: block; /*Aqui eu defino o display como padrão, já que eu havia deixado como none para não aparecer*/
-    }
-
-    .navegacao{
-        justify-content: left;
-        padding-left: 5%;
-    }
-    .navegacao-link a{
-        font-size: 25px;
-    }
-    
-    .navegacao-link{
-        position: absolute; 
-        flex-direction: column; /*Esse column faz com que os itens fiquem um abaixo do outro*/ 
-        gap: 5em;
-        top: 150px;
-        background-color: #aea34d;
-        height: 88%;
-        width: 35vw;
-        animation-duration: 1s; /*Duração do keyframe que será implantando nessa classe por javascript*/
-        padding: 1em;
-        margin-left: -50vw; /*Como eu quero que a barra fique escondida até que o usuário interaja com a página, defino um valor negativo para que ela não apareça.*/
-        border-radius: 10px;
-    }
-    
-    @keyframes show {
-        from {margin-left:-50vw;}
-        top {margin-left: -5vw;}
-    }
-
-    @keyframes hide {
-        from {margin-left: -5vw;}
-        top {margin-left: 50vw;}
-    }
-
-}
-
-/*---------------------------------------------------- Página serviço ----------------------------------------------------*/
+ /*------------------------- Página serviço ---------------------*/
 
 /*Essa parte ficou um pouco mais complexa, por isso se ficar alguma dúvida me mande uma mensagem.*/
 
-.background-servico{
-    background-repeat: no-repeat;
-    background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
-    width: 100%;
-    height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
-    background-image: url(BG/BG_PC_servicos_corte.png);
-}
-
-.background-servico-Invertido{
-    background-repeat: no-repeat;
+ .background-servico{
     background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
     width: auto;
-    height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
-    background-image: url(BG/BG_PC_servicos_corte_invertido.png);
-}
+    height: 740px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
+    background-image: url(BG/BG_PC_servicos_corte.png);
+ }
 
-.divImgServicos{ 
+.divImgServicos{ /*Essa classe tem como objetivo deixar a div do mesmo tamanho da imagem do serviço para facilitar a manipulação*/
     height: auto; 
-}
+ }
 
-.imgServico{ /*Essa class posiciona a imagem na div*/
+ .imgServico{ /*Essa class posiciona a imagem na div*/
     padding-top: 180px;
     height: 25vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
-}
+ }
 
-.subtitulosServicos{  /*Essa class vai posiciona e modificar os subtítulos que são os nomes dos serviço*/
+ .subtitulosServicos{  /*Essa class vai posiciona e modificar os subtítulos que são os nomes dos serviço*/
     padding-top: 10%; /*Posiciona na div*/
     padding-left: 15%; 
-    color: #aea34d;
+    color: #fcdf00;
     height: auto; /*É só para garantir que o altura do conteúdo seja correspondente ao da div*/
     width: 50%; /*Tamanho da largura do conteúdo. Caso você queira que alguma palavra vá para baixo de outra, tente diminuir esse valor.*/
     font-size: 90px;
@@ -209,57 +116,4 @@
 
 .divTitulosServicos{ /*Essa class modifica a div das informações.*/
     width: 60vw; /*Com esse width conseguimos modificar a largura dela. Modificar essa tag também altera a distância entre as informações e a imagem.*/
-}
-
-/*----------- Background invertido -----------*/
-
-/*Essa aparte tem as mesmas divs e tags da página de serviço, porém apenas com alguns valores mudados.*/
-
-.background-servico-Invertido{
-    background-repeat: no-repeat;
-    background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
-    width: auto;
-    height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
-    background-image: url(BG/BG_PC_servicos_corte_invertido.png);
-}
-
-.divImgServicos-Invertido{ 
-    height: auto; 
-}
-
-.imgServico-Invertido{ 
-    padding-top: 100px;
-    height: 25vw;
-}
-
-.subtitulosServicos-Invertido{  
-    padding-top: 20%;
-    padding-left: 15%; 
-    color: #aea34d;
-    height: auto; 
-    width: 50%; 
-    font-size: 90px;
-    font-family: 'Satisfy', cursive; 
-    font-weight: normal;
-}
-
-
-.descricaoServicos-Invertido{ 
-    position: static;
-    padding-left: 15% ;
-    color: black;
-    height: 50%;
-    width: 30%;
-    font-size: 60px;
-    font-weight: normal;
-    font-family: 'Satisfy', cursive;
-}
-
-.divServico-Invertido{
-    display: inline-flex; 
-}
-
-.divTitulosServicos-Invertido{ 
-    width: 60vw; 
-
 }
