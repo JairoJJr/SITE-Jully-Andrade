@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
 }
+#conteudoPagina{
+    height: 750px;
+}
 
 .background{
-    width: auto;
-    height: 750px;
-    background-image: url(BG/corte_pc.png);
+    background-size: 100% 100%;
+    height: 100%;
+    background-image: url(BG/corte_pc.png)
 }
 
 .divBG{
@@ -42,7 +45,7 @@
     top: 50%;
     left: 50%;
     margin-top: -50px; /*aqui pode movimentar a altura*/
-    margin-left: -500px; /*movimento para direita ou esquerda*/
+    margin-left: -30%; /*movimento para direita ou esquerda*/
 }
 
 .botao-link {
@@ -113,6 +116,11 @@
 
 /*media screen ou telas com no max 1220px de largura*/
 @media screen and (max-width: 1220px){
+    .background{
+        background-size: cover;
+        height: 750px;
+        background-image: url(BG/BG_Cel.png)
+    }
     .iconeNav{
         display: block; /*Aqui eu defino o display como padrão, já que eu havia deixado como none para não aparecer*/
     }
@@ -148,20 +156,23 @@
         from {margin-left: -5vw;}
         top {margin-left: 50vw;}
     }
-
 }
 
 /*---------------------------------------------------- Página serviço ----------------------------------------------------*/
 
 /*Essa parte ficou um pouco mais complexa, por isso se ficar alguma dúvida me mande uma mensagem.*/
 
+
 .background-servico{
     background-repeat: no-repeat;
     background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
     width: 100%;
     height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
+    background-size: cover;
     background-image: url(BG/BG_PC_servicos_corte.png);
 }
+
+
 
 .background-servico-Invertido{
     background-repeat: no-repeat;
@@ -176,8 +187,8 @@
 }
 
 .imgServico{ /*Essa class posiciona a imagem na div*/
-    padding-top: 180px;
-    height: 25vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
+    padding-top: 130px;
+    height: 30vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
 }
 
 .subtitulosServicos{  /*Essa class vai posiciona e modificar os subtítulos que são os nomes dos serviço*/
