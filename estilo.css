@@ -156,6 +156,21 @@
         from {margin-left: -5vw;}
         top {margin-left: 50vw;}
     }
+/*------------------------ Teste da página index ----------------------------*/
+
+    .rodape{
+        height: 170px;
+    }
+
+    .texto{
+        margin-top: 50px; /*aqui pode movimentar a altura*/
+        margin-left: -45%; /*movimento para direita ou esquerda*/
+        width: 40%;
+        color: #aea34d;
+        font-size: 20px;
+        font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
+        font-weight: normal; /*Retira o negrito do h1*/
+    }
 }
 
 /*---------------------------------------------------- Página serviço ----------------------------------------------------*/
