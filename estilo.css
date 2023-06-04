@@ -171,6 +171,7 @@
         font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
         font-weight: normal; /*Retira o negrito do h1*/
     }
+
 }
 
 /*---------------------------------------------------- Página serviço ----------------------------------------------------*/
@@ -203,7 +204,7 @@
 
 .imgServico{ /*Essa class posiciona a imagem na div*/
     padding-top: 130px;
-    height: 30vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
+    height: 25vw; /*Tamanho da imagem. (vw também é uma medida de tamanho reconhecida pelo html e é ótima para se trabalhar com responsividade).*/
 }
 
 .subtitulosServicos{  /*Essa class vai posiciona e modificar os subtítulos que são os nomes dos serviço*/
@@ -288,4 +289,45 @@
 .divTitulosServicos-Invertido{ 
     width: 60vw; 
 
+}
+
+/*------------------------ Teste da página serviço ----------------------------*/
+
+@media screen and (max-width: 1220px ) {
+    .divTitulosServicos{
+        width: 60vw;
+    }
+
+    .imgServico{
+        padding-top: 250px;
+    }
+
+    .subtitulosServicos{
+        padding-top: 50%;
+        font-size: 60px;
+    }
+
+    .descricaoServicos{ 
+        font-size: 30px;
+    }
+
+    .imgServico-Invertido{ 
+        padding-top: 200px;
+    }
+
+    .subtitulosServicos-Invertido{  
+        padding-top: 40%;
+        font-size: 60px;
+    }
+
+    .descricaoServicos-Invertido{ 
+        font-size: 30px;
+    }
+  
+}
+
+@media screen and (max-width: 1600px) {
+    .imgServico{
+        padding-top: 250px;
+    }
 }
