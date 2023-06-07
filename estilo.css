@@ -109,11 +109,6 @@
 
 /*media screen ou telas com no max 1220px de largura*/
 @media screen and (max-width: 1220px){
-    .background{
-        background-size: cover;
-        height: 750px;
-        background-image: url(BG/BG_Cel.png)
-    }
     .iconeNav{
         display: block; /*Aqui eu defino o display como padrão, já que eu havia deixado como none para não aparecer*/
     }
@@ -149,22 +144,7 @@
         from {margin-left: -5vw;}
         top {margin-left: 50vw;}
     }
-/*------------------------ Teste da página index ----------------------------*/
-
-    .rodape{
-        height: 170px;
-    }
-
-    .texto{
-        margin-top: 50px; /*aqui pode movimentar a altura*/
-        margin-left: -45%; /*movimento para direita ou esquerda*/
-        width: 40%;
-        color: #aea34d;
-        font-size: 20px;
-        font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
-        font-weight: normal; /*Retira o negrito do h1*/
-    }
-
+   
 }
 
 /*---------------------------------------------------- Página serviço ----------------------------------------------------*/
@@ -174,10 +154,10 @@
 
 .background-servico{
     background-repeat: no-repeat;
-    background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
     width: 100%;
-    height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
+    background-position: center; /*Com essa tag o background terá mais responsividade ao alterar sua dimensão*/
     background-size: cover;
+    height: 738px !important; /*Essa tag prioriza esse elemento. Estava tendo problemas com o background e com essa tag consegui que ele aparecesse inteiro na tela.*/
     background-image: url(BG/BG_PC_servicos_corte.png);
 }
 
@@ -214,7 +194,7 @@
 
 .descricaoServicos{ /*Essa class vai posiciona e modificar as descrições dos serviços. (É bem parecido com a .subtitulosServicos)*/
     position: static;
-    padding-left: 15% ;
+    padding-left: 13% ;
     color: black;
     height: 50%;
     width: 30%;
@@ -254,7 +234,7 @@
 
 .subtitulosServicos-Invertido{  
     padding-top: 20%;
-    padding-left: 15%; 
+    padding-left: 13%; 
     color: #aea34d;
     height: auto; 
     width: 50%; 
@@ -284,9 +264,27 @@
 
 }
 
-/*------------------------ Teste da página serviço ----------------------------*/
+/*------------------------ Responsivo ----------------------------*/
 
-@media screen and (max-width: 1220px ) {
+@media screen and (max-width: 1500px) {
+    .background{
+        height: 750px;
+        background-image: url(BG/BG_Cel.png)
+    }
+    .rodape{
+        height: 170px;
+    }
+
+    .texto{
+        margin-top: 50px; /*aqui pode movimentar a altura*/
+        margin-left: -45%; /*movimento para direita ou esquerda*/
+        width: 40%;
+        color: #aea34d;
+        font-size: 20px;
+        font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
+        font-weight: normal; /*Retira o negrito do h1*/
+    }
+
     .divTitulosServicos{
         width: 60vw;
     }
@@ -295,17 +293,17 @@
         padding-top: 250px;
     }
 
+    .imgServico-Invertido{ 
+        padding-top: 200px;
+    }
+
     .subtitulosServicos{
-        padding-top: 50%;
+        padding-top: 40%;
         font-size: 60px;
     }
 
     .descricaoServicos{ 
         font-size: 30px;
-    }
-
-    .imgServico-Invertido{ 
-        padding-top: 200px;
     }
 
     .subtitulosServicos-Invertido{  
@@ -317,10 +315,4 @@
         font-size: 30px;
     }
   
-}
-
-@media screen and (max-width: 1600px) {
-    .imgServico{
-        padding-top: 250px;
-    }
 }
