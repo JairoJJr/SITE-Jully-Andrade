@@ -45,7 +45,7 @@ window.addEventListener('resize', function (event){
 })
 
 window.addEventListener('resize', function (event){
-    /*Aqui é o mesma função, só estou verificando se o margin-Left da class navegacao-link é igual a 0vw, se for ele esconde a barra adicionado -50vw*/
+    /*Aqui é a mesma função, só estou verificando se o margin-Left da class navegacao-link é igual a 0vw, se for ele esconde a barra adicionado -50vw*/
     if(window.innerWidth < 1220 && document.getElementById("navegacao-link").style.marginLeft == "0vw"){
         document.getElementById("navegacao-link").style.marginLeft = "-50vw"
     }   

@@ -49,7 +49,6 @@
 }
 
 .botao-link {
-    display: inline-block;
     width: 250px;
     height: 150px;
     background-image: url('imagens/botao-whatsapp.png');
@@ -58,12 +57,13 @@
   }
 
 .posicao-botao-link{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 300px; /*aqui pode movimentar a altura*/
-    margin-left: -50px; /*movimento para direita ou esquerda*/
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: -15%;
   }
+
+
 
 /*---------------Navegação---------------*/ 
 
@@ -75,7 +75,6 @@
 
 .navegacao{
     justify-content: center;
-    padding-left: 5%;
 }
 .navegacao-link{
     gap: 14em; /*Distância entre os itens*/
@@ -102,13 +101,7 @@
 ( TESTES )
 
 .ativo{
-    background: #ffffff38;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
 
-    border-radius: 10px;
 }
 */
 /*----------- Mobile ------------*/
