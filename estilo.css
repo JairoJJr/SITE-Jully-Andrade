@@ -33,11 +33,39 @@
 
 .rodape {
     background-color: #9b9b9b;
-    height: 75px;
+    height: auto;
     position: relative;
     margin-top: -4px;
     clear: both;
 }
+
+.conteudoRodape{
+    /*display: inline-flex;*/
+    text-align: center;
+}
+
+.rodapeLinks{
+    display: inline-flex;
+    margin: 30px 200px; /* Ajuste as margens conforme necessário */
+}
+
+.rodapeLinks a{ /*Aqui é retirado a edição do link e criado outros modelos*/
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, sans-serif;; 
+    font-weight: normal;
+}
+
+/*
+.rodapeLinks a:hover {Essa class defini uma cor de fundo quando passar o mouse
+    background-color: #d10808;
+  }
+*/
+
+.rodapeLinks a:active, a:visited{/*Defini uma cor para quando clicar no link e quando o link já foi clicado anteriomente*/
+    color: #aea34d; /*Caso precise colocar cores diferente no visited e active é necessário separar os parâmetros*/
+}
+
 
 .texto{
     position: absolute;
@@ -282,9 +310,6 @@
     .background{
         height: 750px;
         background-image: url(BG/BG_Cel.png)
-    }
-    .rodape{
-        height: 170px;
     }
 
     .texto{
