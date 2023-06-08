@@ -163,7 +163,7 @@
         flex-direction: column; /*Esse column faz com que os itens fiquem um abaixo do outro*/ 
         gap: 5em;
         top: 150px;
-        background-color: #aea34d;
+        background-image: url(Bg/cabeçalho.png);
         height: 88%;
         width: 35vw;
         animation-duration: 1s; /*Duração do keyframe que será implantando nessa classe por javascript*/
