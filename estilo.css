@@ -301,6 +301,16 @@
 
 }
 
+/*------------------------ PÁGINA AMBIENTE ----------------------------*/
+.backgroundAmbiente{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    background-image: url(BG/BG_PC_servicos_corte.png);
+}
+
+
+
 /*------------------------ Responsivo ----------------------------*/
 
 @media screen and (max-width: 1500px) {
