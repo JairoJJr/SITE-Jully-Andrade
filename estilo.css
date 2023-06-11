@@ -311,7 +311,7 @@
 }
 
 .divConteudoAmbiente{ /*Essa class modifica a div das informações. É a mesma class divTituloServico*/
-    width: 10vw; /*Com esse width conseguimos modificar a largura dela. Modificar essa tag também altera a distância entre as informações e a imagem.*/
+    width: 65vw; /*Com esse width conseguimos modificar a largura dela. Modificar essa tag também altera a distância entre as informações e a imagem.*/
 }
 
 .tamanhoImgAmbiente{
@@ -320,22 +320,26 @@
 }
 
 .imgPosicaoAmbiente{
-    padding-top: 150px;
-    padding-left: 120px; 
+    padding-top: 10%;
+    padding-left: 13%; 
 }
 
 .imgRedonda{
-    height: 20vw;
+    height: 22vw;
+    width: 22vw;
     border-radius: 50%;
 }
 
-/*
 .mapAmbiente{
-    height: 20vw;
-    width: 20vw;
+    height: 22vw;
+    width: 22vw;
     border-radius: 50%;
-    overflow: hidden;
-}*/
+}
+
+.posicaoMap{
+    padding-top: 10%;
+    padding-left: 20%; 
+}
 
 
 /*------------------------ Responsivo ----------------------------*/
