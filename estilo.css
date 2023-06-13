@@ -52,7 +52,7 @@
 .rodapeLinks a{ /*Aqui é retirado a edição do link e criado outros modelos*/
     text-decoration: none;
     color: #000000;
-    font-family: Arial, sans-serif;; 
+    font-family: sans-serif;; 
     font-weight: normal;
 }
 
@@ -69,10 +69,19 @@
 
 .texto{
     position: absolute;
-    top: 31%;
-    left: 50%;
-    margin-top: -50px; /*aqui pode movimentar a altura*/
-    margin-left: -55%; /*movimento para direita ou esquerda*/
+    top: 25%;
+    left: -3%;
+}
+
+.textoIndexFormatacao{ /*É uma copia da class subtitulosServicos*/
+    padding-top: 10%; 
+    padding-left: 15%; 
+    color: #aea34d;
+    height: auto; 
+    width: 50%; 
+    font-size: 90px;
+    font-family: 'Satisfy', cursive; 
+    font-weight: normal; 
 }
 
 .botao-link {
@@ -330,6 +339,11 @@
     border-radius: 50%;
 }
 
+.linkTextAmbiente{
+    height: 22vw;
+    width: 22vw;
+}
+
 .mapAmbiente{
     height: 22vw;
     width: 22vw;
@@ -339,6 +353,15 @@
 .posicaoMap{
     padding-top: 10%;
     padding-left: 20%; 
+}
+
+.textMap{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;; 
+    font-weight: normal;
+    text-align: justify;
 }
 
 
@@ -354,10 +377,13 @@
     }
 
     .texto{
-        margin-top: 50px; /*aqui pode movimentar a altura*/
-        margin-left: -45%; /*movimento para direita ou esquerda*/
-        width: 40%;
-        font-size: 20px;
+        top: 5%;
+        left: -3%;
+    }
+
+    .textoIndexFormatacao{
+        padding-top: 40%;
+        font-size: 60px;
     }
 
     .divTitulosServicos{
@@ -390,4 +416,16 @@
         font-size: 30px;
     }
   
+}
+
+@media screen and (max-width: 750px){
+    .texto{
+        top: 20%;
+        left: -3%;
+    }
+
+    .textoIndexFormatacao{
+        padding-top: 40%;
+        font-size: 50px;
+    }
 }
