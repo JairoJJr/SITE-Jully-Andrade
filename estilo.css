@@ -46,14 +46,15 @@
 
 .rodapeLinks{
     display: inline-flex;
-    margin: 30px 200px; /* Ajuste as margens conforme necessário */
+    margin: 30px 160px; /* Ajuste as margens conforme necessário */
 }
 
 .rodapeLinks a{ /*Aqui é retirado a edição do link e criado outros modelos*/
     text-decoration: none;
-    color: #000000;
-    font-family: sans-serif;; 
-    font-weight: normal;
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
 }
 
 /*
