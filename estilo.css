@@ -69,10 +69,10 @@
 
 .texto{
     position: absolute;
-    top: 50%;
+    top: 31%;
     left: 50%;
     margin-top: -50px; /*aqui pode movimentar a altura*/
-    margin-left: -30%; /*movimento para direita ou esquerda*/
+    margin-left: -55%; /*movimento para direita ou esquerda*/
 }
 
 .botao-link {
@@ -357,10 +357,7 @@
         margin-top: 50px; /*aqui pode movimentar a altura*/
         margin-left: -45%; /*movimento para direita ou esquerda*/
         width: 40%;
-        color: #aea34d;
         font-size: 20px;
-        font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
-        font-weight: normal; /*Retira o negrito do h1*/
     }
 
     .divTitulosServicos{
