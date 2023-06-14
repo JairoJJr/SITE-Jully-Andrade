@@ -76,7 +76,7 @@
     color: #aea34d;
     height: auto; 
     width: 50%; 
-    font-size: 90px;
+    font-size: 65px;
     font-family: 'Satisfy', cursive; 
     font-weight: normal; 
 }
@@ -364,7 +364,7 @@
 
 /*------------------------ Responsivo ----------------------------*/
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1080px) {
     .titulo{
         background-image: url(imagens/tituloMobileCorte.png);
     }
