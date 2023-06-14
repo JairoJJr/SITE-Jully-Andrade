@@ -63,10 +63,6 @@
   }
 */
 
-.rodapeLinks a:active, a:visited{/*Defini uma cor para quando clicar no link e quando o link já foi clicado anteriomente*/
-    color: #aea34d; /*Caso precise colocar cores diferente no visited e active é necessário separar os parâmetros*/
-}
-
 
 .texto{
     position: absolute;
