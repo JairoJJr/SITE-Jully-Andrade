@@ -76,7 +76,7 @@
     color: #000000;
     height: auto; 
     width: 50%; 
-    font-size: 65px;
+    font-size: 47px;
     font-family: 'Satisfy', cursive; 
     font-weight: normal; 
 }
@@ -380,7 +380,7 @@
 
     .textoIndexFormatacao{
         padding-top: 40%;
-        font-size: 60px;
+        font-size: 20px;
     }
 
     .divTitulosServicos{
