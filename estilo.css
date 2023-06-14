@@ -232,7 +232,7 @@
     padding-left: 15%; 
     color: #aea34d;
     height: auto; /*É só para garantir que o altura do conteúdo seja correspondente ao da div*/
-    width: 50%; /*Tamanho da largura do conteúdo. Caso você queira que alguma palavra vá para baixo de outra, tente diminuir esse valor.*/
+    width: 66%; /*Tamanho da largura do conteúdo. Caso você queira que alguma palavra vá para baixo de outra, tente diminuir esse valor.*/
     font-size: 90px;
     font-family: 'Satisfy', cursive; /*Fonte meramente ilustrativa, podendo sofrer modificação*/
     font-weight: normal; /*Retira o negrito do h1*/
@@ -244,8 +244,8 @@
     padding-left: 13% ;
     color: black;
     height: 50%;
-    width: 30%;
-    font-size: 60px;
+    width: 33%;
+    font-size: 40px;
     font-weight: normal;
     font-family: 'Satisfy', cursive;
 }
@@ -280,11 +280,11 @@
 }
 
 .subtitulosServicos-Invertido{  
-    padding-top: 20%;
+    padding-top: 15%;
     padding-left: 13%; 
     color: #aea34d;
     height: auto; 
-    width: 50%; 
+    width: 66%; 
     font-size: 90px;
     font-family: 'Satisfy', cursive; 
     font-weight: normal;
@@ -296,8 +296,8 @@
     padding-left: 15% ;
     color: black;
     height: 50%;
-    width: 30%;
-    font-size: 60px;
+    width: 33%;
+    font-size: 40px;
     font-weight: normal;
     font-family: 'Satisfy', cursive;
 }
